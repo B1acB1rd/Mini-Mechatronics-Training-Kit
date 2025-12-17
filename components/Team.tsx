@@ -7,9 +7,10 @@ interface TeamMember {
 }
 
 const members: TeamMember[] = [
-  { name: "Oladeji Emmanuel Timileyin", role: "Group Leader", imageId: "BackgroundEraser_20250223_222855603 (1).jpg"},
-  { name: "Adeniji Solomon Oluwakayode", role: "", imageId: "IMG-20251216-WA0005.jpg" },
-  { name: "Oredipe Oluwagbohunmi Adekunle", role: "", imageId: "PXL_20241023_170349559.PORTRAIT~2.jpg" },
+  { name: "Oladeji Emmanuel Timileyin", role: "Group Leader", imageId: "/BackgroundEraser_20250223_222855603 (1).jpg"},
+  { name: "Adeniji Solomon Oluwakayode", role: "", imageId: "/IMG-20251216-WA0005.jpg" },
+  { name: "Oredipe Oluwagbohunmi Adekunle", role: "", imageId: "/PXL_20241023_170349559.PORTRAIT~2.jpg" },
+  {name: "Adeleke Daniel Oluwasegun", role: "", imageId: "/IMG-20251217-WA0006.jpg" },
 ];
 
 const Team: React.FC = () => {

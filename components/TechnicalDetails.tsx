@@ -146,7 +146,7 @@ long getUltrasonicDistance() {
           </p>
           <div className="bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
              <img 
-               src="Screenshot 2025-12-16 232236.png" 
+               src="/Screenshot 2025-12-16 232236.png" 
                alt="Wiring Diagram" 
                className="w-full h-auto hover:scale-[1.02] transition-transform duration-300" 
              />

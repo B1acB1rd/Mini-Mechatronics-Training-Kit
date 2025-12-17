@@ -2,6 +2,32 @@ import React from 'react';
 import { FileText, User, Building } from 'lucide-react';
 
 const About: React.FC = () => {
+  const handleDownload = async () => {
+    try {
+      const res = await fetch('/project-report.pdf');
+      if (!res.ok) {
+        alert(`Report not available (HTTP ${res.status}).`);
+        return;
+      }
+      const contentType = res.headers.get('content-type') || '';
+      if (!contentType.includes('pdf')) {
+        alert('Unexpected file type received from server.');
+        return;
+      }
+      const blob = await res.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Smart-Environment-Kit-Project-Report.pdf';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (e) {
+      alert('Download failed. Please try again later.');
+    }
+  };
+
   return (
     <section id="about" className="scroll-mt-24">
       <div className="flex items-center mb-6 border-b-2 border-accent pb-2 inline-block">
@@ -22,7 +48,7 @@ const About: React.FC = () => {
           
           <button 
             className="inline-flex items-center bg-accent hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors mt-4 shadow-md group"
-            onClick={() => alert("This would download the PDF report in a real deployment.")}
+            onClick={handleDownload}
           >
             <FileText className="mr-2 group-hover:scale-110 transition-transform" size={20} />
             Download Full Project Report

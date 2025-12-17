@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         </p>
         <div className="relative inline-block shadow-xl rounded-lg overflow-hidden border-4 border-white">
           <img 
-            src="20251216_125505.jpg" 
+            src="/20251216_125505.jpg" 
             alt="Project Setup" 
             className="max-w-full h-auto object-cover"
             width={800}
