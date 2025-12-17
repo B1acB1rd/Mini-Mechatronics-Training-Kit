@@ -36,7 +36,7 @@ const About: React.FC = () => {
           </h3>
           <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-accent shadow-md">
             <img 
-              src="IMG-20251216-WA0024.jpg" 
+              src="/IMG-20251216-WA0024.jpg" 
               alt="Dr. Oyelami" 
               className="w-full h-full object-cover"
             />
