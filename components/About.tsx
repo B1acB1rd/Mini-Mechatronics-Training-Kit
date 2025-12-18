@@ -69,7 +69,7 @@ const About: React.FC = () => {
           </div>
           <div className="space-y-3">
             <div className="flex items-start">
-              <div className="font-semibold w-24 text-gray-500">Supervisior:</div>
+              <div className="font-semibold w-24 text-gray-500">Name:</div>
               <div className="text-gray-800 font-medium">Dr. Oyelami</div>
             </div>
             <div className="flex items-start">
