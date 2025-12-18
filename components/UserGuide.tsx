@@ -38,7 +38,7 @@ const UserGuide: React.FC = () => {
       
       <p className="mb-6 text-gray-700">
         The kit runs in <strong className="text-accent">Exhibition Mode</strong>. Simply power on the system using the 12V adapter. 
-        The sensors are active immediately and respond to changes in the environment.
+        Turn on the switch.The sensors are active immediately and respond to changes in the environment.
       </p>
 
       <div className="overflow-x-auto shadow-md rounded-lg">
